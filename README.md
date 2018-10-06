@@ -1,2 +1,2 @@
 # javascript_iso
-isomorphic javascript development
+cutting edge javascript development
