@@ -1,0 +1,22 @@
+{
+  "name": "javascript_iso",
+  "version": "1.0.0",
+  "description": "isomorphic javascript development",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lel99999/javascript_iso.git"
+  },
+  "author": "lkl",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lel99999/javascript_iso/issues"
+  },
+  "homepage": "https://github.com/lel99999/javascript_iso#readme",
+  "dependencies": {
+    "hapi": "^17.6.0"
+  }
+}
