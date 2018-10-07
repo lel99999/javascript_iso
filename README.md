@@ -1,12 +1,15 @@
 # javascript_iso
+- - -
 cutting edge javascript development
 
-babel src/index.js --out-file dist/index.js
+- - -
+### Development Workflow
+
+$npm install --save-dev babel-cli babel-preset-es2015
 
 alias babel=./node_modules/.bin/babel
 
-- - -
-## Development Workflow
+babel src/index.js --out-file dist/index.js
 
 $npm install gulp --save-dev
 $alias gulp=./node_modules/.bin/gulp
