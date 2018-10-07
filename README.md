@@ -27,3 +27,12 @@ $npm install --save-dev babel-core babel-preset-env
 
 #### babel 7
 $npm install --save-dev @babel/core @babel/preset-env
+
+#### Install additional monitoring packages 
+$npm install gulp-nodemon --save-dev
+$npm install run-sequence --save-dev
+
+#### HTML Related Info
+$npm install nunjucks -save
+
+
