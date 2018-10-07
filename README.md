@@ -1,5 +1,5 @@
 # javascript_iso
-isomorphic javascript development
+cutting edge javascript development
 
 babel src/index.js --out-file dist/index.js
 
