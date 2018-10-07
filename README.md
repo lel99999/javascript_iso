@@ -1,6 +1,6 @@
 # javascript_iso
 - - -
-cutting edge javascript development
+modern javascript development
 
 - - -
 ### Development Workflow
