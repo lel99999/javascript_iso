@@ -1,5 +1,6 @@
 var Hapi = require('hapi');
-import nunjucks from 'nunjucks';
+var nunjucks = require('nunjucks');
+//import nunjucks from 'nunjucks';
 
 nunjucks.configure('./dist');
 
@@ -15,12 +16,17 @@ const server = new Hapi.Server({
 server.route({
   method: 'GET',
   path: '/theman',
-  handler: function(request,h){
+//handler: function(request,reply){
+  handler: async (request,h) => {
+    const params = request.params
     nunjucks.render('index.html',{
-        fname: 'Test', lname: 'LNTest'},
-      },)
-
-    return 'theman is here';
+        fname: 'Test', lname: 'LNTest'
+        },function(err,html){
+          return html;
+ //       reply(html);
+    });
+//  return h.response("hello"); 
+    return h.response(html); 
   }
 });
 

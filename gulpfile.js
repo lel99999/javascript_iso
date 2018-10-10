@@ -12,8 +12,15 @@ gulp.task('start',function(){
   });
 });
 
+gulp.task('copy',function(){
+// return gulp.src('src/**/*.html')
+  return gulp.src('src/**/*.*')
+    .pipe(gulp.dest('dist'));
+});
+
 gulp.task('watch',function(){
   gulp.watch('src/**/*.js',['compile']);
+  gulp.watch('src/**/*.html',['copy']);
 });
 
 gulp.task('compile',function(){
@@ -29,5 +36,5 @@ gulp.task('compile',function(){
 //});
 
 gulp.task('default',function(callback){
-  sequence(['compile','watch'], 'start',callback);
+  sequence(['compile','watch','copy'], 'start',callback);
 });
